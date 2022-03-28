@@ -20,11 +20,8 @@ html,
       }
     }
     .star {
-      color: #f5deb3;
-      font-size: 1em;
-      font-family: Arial, sans-serif;
-      text-shadow: 0 0 1px #000;
-      opacity: 80%;
+      height: 18px;
+      width: 18px;
     }
 
     @-webkit-keyframes stars-fall {
