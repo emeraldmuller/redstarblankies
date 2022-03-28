@@ -19,7 +19,7 @@ html,
         background-position: 0% 50%;
       }
     }
-    .star, img {
+    img.star {
       height: 18px;
       width: 18px;
     }
