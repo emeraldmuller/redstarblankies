@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Star Blankies</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
+  <style>
   #animation_container {
 	position:absolute;
 	margin:auto;
@@ -13,14 +13,14 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="newlinks.js"></script>
+<script src="links.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("A20F83994F8849A78147F8E6A4174286");
+	var comp=AdobeAn.getComposition("D82F6218CBF049A69BAB0EF4FE6CD7D7");
 	var lib=comp.getLibrary();
 	handleComplete({},comp);
 }
@@ -28,7 +28,7 @@ function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.newlinks();
+	exportRoot = new lib.links();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
