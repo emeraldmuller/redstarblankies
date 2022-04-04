@@ -5,49 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Star Blankies</title>
     <link rel="stylesheet" href="style.css" />
-   <style>
-  #animation_container {
-	position:absolute;
-	margin:auto;
-	left:0;right:0;
-  }
-</style>
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="links.js"></script>
-<script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-function init() {
-	canvas = document.getElementById("canvas");
-	anim_container = document.getElementById("animation_container");
-	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("D82F6218CBF049A69BAB0EF4FE6CD7D7");
-	var lib=comp.getLibrary();
-	handleComplete({},comp);
-}
-function handleComplete(evt,comp) {
-	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-	var lib=comp.getLibrary();
-	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.links();
-	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
-	//Registers the "tick" event listener.
-	fnStartAnimation = function() {
-		stage.addChild(exportRoot);
-		createjs.Ticker.framerate = lib.properties.fps;
-		createjs.Ticker.addEventListener("tick", stage);
-	}	    
-	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
-	AdobeAn.compositionLoaded(lib.properties.id);
-	fnStartAnimation();
-}
-</script>
   </head>
-  <body onload="init();">
-    
-    <canvas id="canvas" width="390" height="844" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 1.00); z-index: 10;"></canvas>
-    
+  <body>
     <div class="stars" aria-hidden="true">
       <div class="star"><img src="star1.png" style="height:18px;width:18px;" alt="star" /></div>
       <div class="star"><img src="star2.png" style="height:18px;width:18px;" alt="star" /></div>
