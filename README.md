@@ -1,3 +1,2 @@
 # redstarblankies-links
-Still a work in progress.
-Images file needs to be generated and uploaded.
+This is the current working version. I want to adjust some elements regarding size, visibilty, and click space.
