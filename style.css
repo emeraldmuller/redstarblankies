@@ -44,25 +44,6 @@ html,
         transform: translateX(0px);
       }
     }
-    @keyframes stars-fall {
-      0% {
-        top: -10%;
-      }
-      100% {
-        top: 100%;
-      }
-    }
-    @keyframes stars-shake {
-      0% {
-        transform: translateX(0px);
-      }
-      50% {
-        transform: translateX(80px);
-      }
-      100% {
-        transform: translateX(0px);
-      }
-    }
     .star {
       position: fixed;
       top: -10%;
