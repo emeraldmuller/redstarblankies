@@ -2057,7 +2057,7 @@ if (reversed == null) { reversed = false; }
 		this.igbtn.addEventListener("click", fl_ClickToGoToWebPage_6);
 		
 		function fl_ClickToGoToWebPage_6() {
-			window.open("https://instagram.com/peepofamilyblog?igshid=YmMyMTA2M2Y=", "_blank");
+			window.open("https://www.instagram.com/red.star.dreams/", "_blank");
 		}
 	}
 	this.frame_1 = function() {
