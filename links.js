@@ -1897,7 +1897,7 @@ if (reversed == null) { reversed = false; }
 		this.igbtn.addEventListener("click", fl_ClickToGoToWebPage_11);
 		
 		function fl_ClickToGoToWebPage_11() {
-			window.open("https://www.instagram.com/red.star.dank/", "_blank");
+			window.open("https://www.instagram.com/red.star.dankie/", "_blank");
 		}
 		
 		this.GHbtn.addEventListener("click", fl_ClickToGoToWebPage_12);
